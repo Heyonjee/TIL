@@ -1,3 +1,4 @@
+[Git & Github]
 # TIL Day02
  
 ## Why Git & Github?   
@@ -11,9 +12,7 @@
 ### Github
 - Git을 사용하는 프로젝트의 협업을 위한 웹호스팅 서비스
 - 포트폴리오를 자랑할 수 있는 공간
-- 1일 1커밋하기
-- [이동욱님 Github 계정](https://github.com/jojoldu
-)   
+- 1일 1커밋하기 
 
 ## CLI
 > CLI(Command LIne Interface, 커맨드 라인 인터페이스)는 터미널을 통해 사용자와 컴퓨터가 상호작용하는 방식을 뜻한다.
