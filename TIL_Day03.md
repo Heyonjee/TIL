@@ -36,3 +36,23 @@
 - **ctrl + l**  => 스크롤 이동
 - **clear**  => 스크롤 이동, 위로 올라가서 이전 코드 확인하긴 어려움
 - 화살표 위, 아래  => 이전 라인 가져오기
+
+### Github 사용방법
+
+#### commit 생성 
+1. mkdir 폴더명/ => 폴더만들기
+2. git init     => git이 버전관리 시작(처음 1번만 한다.)  
+3. touch 파일명  => 파일만들기  
+4. git status    => 파일상태(untracking) 
+5. git add       => 파일 staging area로 올림
+6. git status    => 파일상태(new file)
+7. git commit -m "메시지 옵션"
+8. 파일 수정 및 저장
+9. git add
+10. git commit -m "메시지 옵션"
+
+#### push
+1. new repository 생성
+2. git remote add origin 원격 URL
+3. git remote -v  =>조회해보기
+4. git push origin master
