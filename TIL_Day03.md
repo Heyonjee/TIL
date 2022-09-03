@@ -41,18 +41,47 @@
 
 #### commit 생성 
 1. mkdir 폴더명/ => 폴더만들기
-2. git init     => git이 버전관리 시작(처음 1번만 한다.)  
-3. touch 파일명  => 파일만들기  
-4. git status    => 파일상태(untracking) 
-5. git add       => 파일 staging area로 올림
-6. git status    => 파일상태(new file)
-7. git commit -m "메시지 옵션"
-8. 파일 수정 및 저장
-9. git add
-10. git commit -m "메시지 옵션"
+2. git init     => git이 버전관리 시작(처음 1번만 한다.)
+   - 주의 : 홈폴더나 데스크탑처럼 상위폴더에서는 git 하지 않기!!
+3. touch .gitignore  => git버전관리 제외. 반드시 add 전에 해야함. [링크](https://www.toptal.com/developers/gitignore/)  
+4. touch 파일명  => 파일만들기  
+5. git status    => 파일상태(untracking) 
+6. git add       => 파일 staging area로 올림
+7. git status    => 파일상태(new file)
+8. git commit -m "메시지 옵션"  =>커밋 생성
+9.  파일 수정 및 저장
+10. git add
+11. git commit -m "메시지 옵션"
+12. git log  => commit들 완전하게 보여줌
+13. git log --oneline  => commit 간단하게 보여줌
+14. rm -r .git/  => git 삭제
 
 #### push
 1. new repository 생성
 2. git remote add origin 원격 URL
 3. git remote -v  =>조회해보기
 4. git push origin master
+
+#### pull
+1. git clone 주소  => 로컬저장소 생성(처음 1번만 한다.)
+   - 주의 : clone할 경우 git init 안된 상태에서 해야하므로 홈폴더나 데스크탑처럼 상휘폴더에서 클론해야하기 때문에 bash창에서 clone한다.
+2. git pull origin master
+3. git add
+4. git commit -m "메시지 옵션"
+5. git push origin master
+
+#### reject
+- pull 실행
+   - case 1) auto merge는 그냥 push
+   - case 2) 직접 merge commit 쌓고 push
+
+#### branch 명령어
+- git branch  => 목록확인
+- git branch 신규브랜치명  => 브랜치 생성
+- git switch  브랜치명  => 브랜치 이동 : HEAD를 이동함
+- git switch -c 브랜치명  => 브랜치 생성 후 이동
+- git merge 브랜치명  => 브랜치 병합
+- git branch -d 브랜치명  => 브랜치 삭제
+- git branch -D 브랜치명  => 강제삭제 옵션
+- git log --oneline --all --graph  => 그래프 형식으로 보여줌
+- 브랜치 merge충돌 경우 : 저장 -> 수정 -> add -> commit
