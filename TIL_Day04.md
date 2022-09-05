@@ -35,7 +35,37 @@
     - Java 프로그램의 JVM(Java Virtual Machine)이 운영체제에 맞게 번역해줌 => 이식성이 좋음. 즉 플랫폼이 독립적이다
 
 ### Java 개발도구와 실행환경
-
+1. JDK(Java Development Kit, 컴파일러)
+    - 자바를 이용해 프로그램을 개발하는 데 필요한 도구를 모아둔 집합
+    - 컴파일 명령어와 실행 명령어를 담고 있음
+    - 자바 프로그램 만드는 도구모음, 버전업하면 작업기능 추가됨
+    - JRE 외에 개발에 필요한 도구들을 가지고 있음
+    - 컴파일러, 디버거
+2. JRE(Java Runtime Environment)
+    - 완성된 프로그램을 실행하는데 필요한 환경
+    - JDK를 가져와 프로그램을 완성하고 JRE 위에서 실행하면 프로그램이 작동
+    - 클래스 로더, 자바 API, 런타임 라이브러리,....
+3.JVM(Java VIRtual Machine, 자바 가상 운영체제)
+    - JAVA 프로그램을 실행해줌
+    - 실 운영체제를 대신해서 자바 프로그램을 실행하는 가상의 운영체제 역할
+--------------------------------------------------
+[자바소스코드(hello.java)]------컴파일(javac.exe)------------> [바이트코드(hello.class)]-----------------> JVM(java.exe)--------------> 실행파일(기계어)----------------> 실행
+- javac : .java 파일을 .class 파일로 컴파일 해주는 컴파일러
+- java : javac로 컴파일 된 class 파일을 실행하는 프로그램
 ### Java 개발도구 설치
+1. JDK 설치 및 확인
+    1)설치파일:jkd-11.0.15.1
+    2)설치위치:C:\Java\jdk-11.0.15.1\
+        구글접속 → java jdk 11 검색 → java se 11 archive downloads-oracle → jdk 11 windows-64 설치 : 오류방지 위해 파일명 빈칸 없애기. 맨 앞 ,뒤의 \표시는 삭제x => C:\Java\jdk-11.0.15.1\
+    3)환경변수 설정
+     - 내pc → 마우스 오른쪽 :  속성 → 고급시스템설정 → 고급탭에  환경변수 → 시스템 변수 중 path → 새로 만들기 → 변수이름: JAVA_HOME → 변수값:디렉터리 찾아보기 → 내pc → C드라이브 → Java → jdk-11.0.15.1
+     - 시스템 변수 중 path → 편집→새로 만들기→%JAVA_HOME%\bin
+     - 윈도우 메뉴 → 마우스 오른쪽 : 실행→ 열기 : cmd 창
+     - 윈도우 메뉴 → javac version, java-version 확인하기
+
+2. 이클립스 설치 - 통합개발환경(IDE : Intergarated Development Environment)
+    1)다운로드 : 구글 접속 → 이클립스 검색 → 패키지 다운로드 → 엔터프라이즈 자바 및 웹 개발자를 위한 Eclipse IDE 윈도우x86_64 다운
+    2)환경설정 : window탭 → preferences → font / 버전 변경 compile / encoding : utf-8
+
 
 ### Java 기본구조
