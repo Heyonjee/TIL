@@ -1,5 +1,5 @@
 [Java]
-# TIL Day05
+# TIL Day04
 
 ## Java
 
